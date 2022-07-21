@@ -12,9 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
 <script>
-    function ThisDay(value) {
-        alert("Today is day " + value)
-    }
+    document.querySelectorAll('.btndate').forEach(item =>{
+        item.addEventListener('click', event =>{
+            alert(event.target.value);
+        })
+    })
 </script>
 <body>
 <header>
@@ -22,7 +24,13 @@
 </header>
 <div class="container">
     <div>
+        <div class="navigation">
         <h1 class="titles">July</h1>
+            <div class="arrows">
+                <button><</button>
+                <button>></button>
+            </div>
+        </div>
         <table>
             <tbody>
             <tr>
@@ -35,87 +43,50 @@
                 <th>Sun</th>
             </tr>
             <tr>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="  1"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="  2"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="  3"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="  4"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="  5"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="  6"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="  7"></td>
+                <td><input class="btndate" type="button" value="  1"></td>
+                <td><input class="btndate" type="button" value="  2"></td>
+                <td><input class="btndate" type="button" value="  3"></td>
+                <td><input class="btndate" type="button" value="  4"></td>
+                <td><input class="btndate" type="button" value="  5"></td>
+                <td><input class="btndate" type="button" value="  6"></td>
+                <td><input class="btndate" type="button" value="  7"></td>
             </tr>
             <tr>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="  8"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="  9"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="10"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="11"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="12"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="13"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="14"></td>
+                <td><input class="btndate" type="button" value="  8"></td>
+                <td><input class="btndate" type="button" value="  9"></td>
+                <td><input class="btndate" type="button" value="10"></td>
+                <td><input class="btndate" type="button" value="11"></td>
+                <td><input class="btndate" type="button" value="12"></td>
+                <td><input class="btndate" type="button" value="13"></td>
+                <td><input class="btndate" type="button" value="14"></td>
             </tr>
             <tr>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="15"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="16"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="17"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="18"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="19"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="20"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="21"></td>
+                <td><input class="btndate" type="button" value="15"></td>
+                <td><input class="btndate" type="button" value="16"></td>
+                <td><input class="btndate" type="button" value="17"></td>
+                <td><input class="btndate" type="button" value="18"></td>
+                <td><input class="btndate" type="button" value="19"></td>
+                <td><input class="btndate" type="button" value="20"></td>
+                <td><input class="btndate" type="button" value="21"></td>
             </tr>
             <tr>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="22"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="23"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="24"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="25"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="26"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="27"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="28"></td>
+                <td><input class="btndate" type="button" value="22"></td>
+                <td><input class="btndate" type="button" value="23"></td>
+                <td><input class="btndate" type="button" value="24"></td>
+                <td><input class="btndate" type="button" value="25"></td>
+                <td><input class="btndate" type="button" value="26"></td>
+                <td><input class="btndate" type="button" value="27"></td>
+                <td><input class="btndate" type="button" value="28"></td>
             </tr>
             <tr>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="29"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="30"></td>
-                <td><input class="btndate" type="button" onclick="ThisDay(value)" value="31"></td>
+                <td><input class="btndate" type="button" value="29"></td>
+                <td><input class="btndate" type="button" value="30"></td>
+                <td><input class="btndate" type="button" value="31"></td>
 
             </tbody>
         </table>
     </div>
 
-    <!--<table>-->
-    <!--    <thead>-->
-    <!--        <h1>Schedule for July 18, 2022</h1>-->
-    <!--    </thead>-->
-    <!--    <tbody>-->
-    <!--    <tr>-->
-    <!--        <th>Leslie Alexander</th>-->
-    <!--    </tr>-->
-    <!--    <tr>-->
-    <!--        <td>1:00 PM - 2:30 PM</td>-->
-    <!--    </tr>-->
-    <!--    <tr>-->
-    <!--        <th>Michael Foster</th>-->
-    <!--    </tr>-->
-    <!--    <tr>-->
-    <!--        <td>3:00 PM - 4:30 PM</td>-->
-    <!--    </tr>-->
-    <!--    <tr>-->
-    <!--        <th>Dries Vincent</th>-->
-    <!--    </tr>-->
-    <!--    <tr>-->
-    <!--        <td>5:00 PM - 6:30 PM</td>-->
-    <!--    </tr>-->
-    <!--    <tr>-->
-    <!--        <th>Lindsay Walton</th>-->
-    <!--    </tr>-->
-    <!--    <tr>-->
-    <!--        <td>7:00 PM - 8:30 PM</td>-->
-    <!--    </tr>-->
-    <!--    <tr>-->
-    <!--        <th>Courtney Henry</th>-->
-    <!--    </tr>-->
-    <!--    <tr>-->
-    <!--        <td>9:00 PM - 10:30 PM</td>-->
-    <!--    </tr>-->
-    <!--    </tbody>-->
-    <!--</table>-->
 
     <div>
         <ul class="eventslist">
